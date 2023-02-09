@@ -1,0 +1,193 @@
+:root{
+    /* Paire de couleurs principale */
+    --couleurPrincipale: #212121;
+    --couleurSecondaire: white;
+    /* Paire de couleurs secondaire */
+    --couleurTertiaire: #6D9886;
+    --couleurQuadra: #F6F6F6;
+
+    /* Fonts Family */
+    --fontFamilyTitle: 'Roboto', sans-serif;
+    --fontFamilyText: 'Roboto Slab', serif;
+}
+
+/*  CONTAINER */
+
+.containeur{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+/* SELECTEUR GENERIQUE */
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin:0px;
+    height: 150vh;
+}
+
+a{
+    text-decoration: none;
+    color: var(--couleurSecondaire);
+}
+
+
+header{
+    position: sticky;
+    position: -webkit-sticky;/* Permet de favoriser la compatibilité avec plus de navigateur*/
+    top: 0;
+    background-color: var(--couleurPrincipale);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--couleurSecondaire);
+    padding: 10px 0;
+    font-family: var(--fontFamilyTitle);
+    font-size: 1em;
+}
+
+footer{
+
+    padding: 15px;
+    border-top: 3px solid var(--couleurPrincipale);
+    background-color:  var(--couleurSecondaire);
+    color: var(--couleurPrincipale);
+}
+
+
+/* ID Page Projet */
+
+#projectDiv{
+    height: 100vh;
+    background-color: var(--couleurTertiaire);
+    background-image: url("../images/jump-start.png");
+    background-position: center; /* position de l'image*/
+    background-size:cover;  /* taille de l'image dans l'élment */
+    padding: 10% 10%;
+}
+
+#textProjectDiv{
+    background-color: rgba(0,0,0,0.43);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+#titreProject{
+    color: var(--couleurQuadra);
+    font-family: var(--fontFamilyTitle);
+    text-shadow: 1px 5px 4px rgba(255, 255, 255, 0.486);
+}
+
+#presentationProject{
+    color: var(--couleurQuadra);
+    font-family: var(--fontFamilyText);
+    text-shadow: 1px 5px 4px rgba(255, 255, 255, 0.486);
+}
+
+
+/* ID Page Descirption */
+
+#descriptionDiv{
+    height: 50vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    padding: 0 10px;
+
+}
+
+#descriptionProject{
+    font-family: var(--fontFamilyText);
+    margin: 0;
+    padding: 15px;
+}
+
+.titlePresentationDiv{
+    font-family: var(--fontFamilyTitle);
+    margin: 5px 0;
+
+}
+
+.divElementPresentation{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#buttonContact{
+    background-color: var(--couleurPrincipale);
+    color: var(--couleurSecondaire);
+    font-size: 1.3em;
+    font-family: var(--fontFamilyTitle);
+    font-weight: bolder;
+    padding: 5px  15px;
+    border-radius: 4px;
+    margin: 20px;
+
+}
+
+#buttonContact:hover{
+    background-color: var(--couleurTertiaire);
+    color: var(--couleurQuadra);
+}
+
+#buttonContactProjet{
+    padding-top: 20px;
+}
+
+/* Media 1050px */
+@media all and (max-width: 1050px){
+    .containeur{
+        margin: 0 auto;
+        width: 720px;
+    }
+}
+
+/* Media 750px */
+@media all and (max-width: 750px){
+
+    .containeur{
+        width: 600px;
+    }
+
+}
+
+  /* Media 650px */
+
+@media all and (max-width: 650px){
+
+    .containeur{
+    width: 480px;
+    }
+}
+
+/* Media 490px */
+@media all and (max-width: 490px){
+
+    body{
+        min-width: 350px;
+    }
+    .containeur{
+        width: 350px;
+    }
+    #descriptionDiv {
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: start;
+        align-items: center;
+        padding: 30px 10px;
+    }
+
+}
