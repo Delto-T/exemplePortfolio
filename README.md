@@ -1,5 +1,5 @@
 # Portofolio
-This is a trainning project made with https://believemy.com/. I choose this tranning because i want to revise HTML and CSS before starting a real trainning.
+This is a trainning project. I choose this tranning because i want to revise HTML and CSS before starting a real trainning.
 Disclaimer: This is not a real portfolio. Portfolio content's is fake for this exercice.
 
 ### Description
